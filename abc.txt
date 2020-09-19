@@ -1,0 +1,9 @@
+jeet = design + testing 
+nishchay = design + developer 
+brijesh =  doc + developer  
+rajvi = doc + developer 
+
+use case   ---> ok
+er ---> ok
+data dictionary ---> rajvi
+

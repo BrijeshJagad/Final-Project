@@ -123,3 +123,4 @@ C:\fakepath(77,9-43): warning X3571: pow(f, e) will not work for negative f, use
 [1031/203235.572:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [1031/203235.613:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [1031/203235.816:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[1031/215500.766:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost

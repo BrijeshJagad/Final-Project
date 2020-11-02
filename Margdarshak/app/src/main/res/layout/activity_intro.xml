@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivlogointro"
+        android:layout_width="128dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/arial_rounded_mt_bold_4291"
+        android:gravity="center"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="49sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivlogointro" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnGoogle"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/googlebutton"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvsignup"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="70dp"
+        tools:ignore="UnusedAttribute"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnilluse"
+        android:layout_width="285dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:fontFamily="@font/arial_rounded_mt_bold_4291"
+        android:text="@string/i_ll_use_e_mail_or_phone"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_blue"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        tools:ignore="UnusedAttribute"/>
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/or_signup_with"
+        android:textColor="@color/gray_blue"
+        android:fontFamily="@font/arial_rounded_mt_bold_4291"
+        app:layout_constraintBottom_toTopOf="@id/llayoutbuttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnilluse"
+        tools:ignore="InvalidId" />
+
+    <LinearLayout
+        android:id="@+id/llayoutbuttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/llayouttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOr">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivguest"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/guest"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            tools:ignore="RtlHardcoded,UnusedAttribute"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivfacebook"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/facebook"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            tools:ignore="RtlHardcoded, UnusedAttribute" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayouttext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvalready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/gray_blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/arial_rounded_mt_bold_4291"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/login_2"
+            android:textColor="@color/gray_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/arial_rounded_mt_bold_4291"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

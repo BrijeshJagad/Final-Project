@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TVMar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/margdarshak"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#4d4b4b"
+        android:lineSpacingExtra="3sp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/line"
+        app:layout_constraintTop_toBottomOf="@id/TVMar"
+        android:layout_marginTop="11.5dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVcat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/categories"
+        app:layout_constraintTop_toBottomOf="@id/IVline"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintBottom_toTopOf="@id/IVexam"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVexam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exams"
+        app:layout_constraintTop_toBottomOf="@id/IVcat"
+        app:layout_constraintBottom_toTopOf="@id/IVsucc"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVsucc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/suggestion"
+        app:layout_constraintTop_toBottomOf="@id/IVexam"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cut"
+        app:layout_constraintTop_toBottomOf="@id/IVsucc"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IVbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="11dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

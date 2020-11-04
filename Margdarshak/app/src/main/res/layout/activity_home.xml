@@ -3,39 +3,48 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bhome"
+    >
 
-    <TextView
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
         android:id="@+id/TVMar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/margdarshak"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="#4d4b4b"
-        android:lineSpacingExtra="3sp"
         tools:ignore="MissingConstraints"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="12dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/header"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/margdarshak"
+            android:textSize="30sp"
+            android:fontFamily="@font/harlow_solid_italic_italic"
+            android:textColor="#000000"
+            android:lineSpacingExtra="3sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/IVline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/line"
-        app:layout_constraintTop_toBottomOf="@id/TVMar"
-        android:layout_marginTop="11.5dp"
-        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/IVcat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/categories"
-        app:layout_constraintTop_toBottomOf="@id/IVline"
+        app:layout_constraintTop_toBottomOf="@id/TVMar"
         app:layout_constraintStart_toStartOf="@id/guidelineStart1"
-        app:layout_constraintBottom_toTopOf="@id/IVexam"/>
+        app:layout_constraintBottom_toTopOf="@id/IVexam"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/IVexam"
@@ -44,7 +53,8 @@
         app:srcCompat="@drawable/exams"
         app:layout_constraintTop_toBottomOf="@id/IVcat"
         app:layout_constraintBottom_toTopOf="@id/IVsucc"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/IVsucc"
@@ -52,7 +62,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/suggestion"
         app:layout_constraintTop_toBottomOf="@id/IVexam"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/IVcut"
@@ -60,17 +71,64 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/cut"
         app:layout_constraintTop_toBottomOf="@id/IVsucc"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart1"/>
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/IVbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/bar"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bot"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="660dp"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Lbar"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:id="@+id/Lbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bar"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="28dp"
+
+            app:srcCompat="@drawable/home"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="60dp"
+
+            app:srcCompat="@drawable/search"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="60dp"
+
+            app:srcCompat="@drawable/bookmark"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/profile"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"

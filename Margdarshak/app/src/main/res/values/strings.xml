@@ -3,7 +3,7 @@
     <string name="todo">TODO</string>
     <string name="margdarshak">Margdarshak</string>
     <string name="already_have_an_account">already have an account?</string>
-    <string name="sign_up">sign up!</string>
+    <string name="sign_up">Sign up!</string>
     <string name="hello">hello,</string>
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
@@ -30,4 +30,6 @@
     <string name="doesn_t_receive_an_otp">Doesn\'t receive an OTP</string>
     <string name="resend_otp"><u>Resend OTP</u></string>
     <string name="let_s">Let\'s,</string>
+
+
 </resources>

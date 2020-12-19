@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    >
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="800dp"
+
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart"
@@ -52,7 +60,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/enter_otp_for_verification"
-        android:textSize="15sp"
+        android:textSize="@dimen/_15sdp"
         android:lineSpacingExtra="5dp"
         android:textColor="@color/gray_blue"
         app:layout_constraintTop_toBottomOf="@id/tvVerification"
@@ -129,7 +137,7 @@
         android:gravity="center"
         android:text="@string/doesn_t_receive_an_otp"
         android:textColor="@color/gray_blue"
-        android:textSize="15sp"
+        android:textSize="@dimen/_15sdp"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/lLOTP"
@@ -146,7 +154,7 @@
         android:gravity="center"
         android:text="@string/resend_otp"
         android:fontFamily="@font/arial_rounded_mt_bold_4291"
-        android:textSize="15sp"/>
+        android:textSize="@dimen/_15sdp"/>
 
     <ImageButton
         android:id="@+id/ibSignup"

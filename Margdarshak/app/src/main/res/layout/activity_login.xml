@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    >
+    <ImageView
+        android:layout_width="420dp"
+        android:layout_height="800dp"
+
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineStart1"
@@ -241,11 +249,10 @@
         android:id="@+id/pr_Bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:visibility="invisible"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
